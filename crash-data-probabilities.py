@@ -236,30 +236,6 @@ for action, count in driver_action_counts.items():
     driver_action_probs_lst.append(prob)
     print(f'Probability of accident occurring due to {action}: {prob}')
 
-# driver_action_counts_lst = [] # empty list to store counts
-
-# # get crash counts by driver action
-# for action in driver_action_lst: 
-#     driver_action_counts_lst.append(driver_action_counts.get(action))
-
-# calculate action probabilities   
-# driver_action_probs_lst = [] # empty list to store probabilities of crash under
-#                               # action as percent %
-
-# for count in driver_action_counts_lst:
-#     prob = (count / num_crashes_2024) * 100
-#     driver_action_probs_lst.append(prob)
-    
-# Print probability of accident under at each action    
-# for i in range(0, len(driver_action_lst)):
-#     driver_action = driver_action_lst[i]
-#     driver_action_prob = driver_action_probs_lst[i]
-    
-#     if (i == len(driver_action_lst) - 1):
-#         print(f'Probability of accident occurring on a {driver_action}: {driver_action_prob} \n')
-#     else:
-#         print(f'Probability of accident occurring on a {driver_action}: {driver_action_prob}')
-        
 # plot action probs
 plotter.bar(driver_action_lst, driver_action_probs_lst)
 plotter.ylabel("Probability (%)")
