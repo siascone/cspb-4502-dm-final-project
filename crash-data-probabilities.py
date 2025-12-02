@@ -7,29 +7,24 @@ import os
 
 
 # --- Read in crash data csv files ---
-crash_data_2021 = pd.read_csv('assets/2021-Crash-Data-Normalized.csv')
-crash_data_2022 = pd.read_csv('assets/2022-Crash-Data-Normalized.csv')
-crash_data_2023 = pd.read_csv('assets/2023-Crash-Data-Normalized.csv')
-crash_data_2024 = pd.read_csv('assets/2024-Crash-Data-Normalized.csv')
-
-# crash_data_frame = pd.DataFrame(crash_data) # comment in to use single year
-
-# combine data from years 2021 - 2024
-
-all_crash_data_files = glob.glob(os.path.join('assets/', '*.csv'))
-
-data_frame_list = []
-for file in all_crash_data_files:
-    data_frame = pd.read_csv(file)
-    data_frame_list.append(data_frame)
-    
-crash_data_frame = pd.concat(data_frame_list, ignore_index=True)
-
-# single csv of all crash data
-crash_data_frame.to_csv('assets/all_crash_data.csv', index=False)
+# crash_data_2021= pd.read_csv('assets/2021-Crash-Data-Normalized.csv')
+# crash_data_2022 = pd.read_csv('assets/2022-Crash-Data-Normalized.csv')
+# crash_data_2023= pd.read_csv('assets/2023-Crash-Data-Normalized.csv')
+# crash_data_2024 = pd.read_csv('assets/2024-Crash-Data-Normalized.csv')
 
 crash_data = pd.read_csv('assets/all_crash_data.csv')
+crash_data_frame = pd.DataFrame(crash_data) 
 
+# crash_data_files = glob.glob("assets/*.csv")
+
+# crash_data_frames = []
+# for file in crash_data_files:
+#     crash_data_frames.append(pd.read_csv(file))
+    
+# crash_data_frame = pd.concat(crash_data_frames, ignore_index=True)
+
+# num_crashes = len(crash_data_frame)
+# print(num_crashes)
 
 # --- Count of crashes in 2024 ---
 num_crashes_2024 = crash_data["CUID"].count()
@@ -61,10 +56,10 @@ print(f'Probability of accident occuring in a construction zone: {construction_z
 categories = ["Wild Animals", "School Zone", "Construction Zone"]
 probs = [wild_animal_prob_percent, school_zone_prob_percent, construction_zone_prob_percent]
 
-# plotter.bar(categories, probs)
-# plotter.ylabel("Probability (%)")
-# plotter.title("Zone and Animal Related Crash Probabilities")
-# plotter.show()
+plotter.bar(categories, probs)
+plotter.ylabel("Probability (%)")
+plotter.title("Zone and Animal Related Crash Probabilities")
+plotter.show()
 
 # --- Weather related crashes ---
 # Conditions: Blowing Snow, Clear, Cloudy, Dust, Fog, Freezing Rain or Freezing 
@@ -114,10 +109,10 @@ for i in range(0, len(weather_conditions)):
         
 
 # plot weather conditions probs
-# plotter.bar(weather_conditions, weather_condition_probabilities)
-# plotter.ylabel("Probability (%)")
-# plotter.title("Weather Condition Crash Probabilities")
-# plotter.show()
+plotter.bar(weather_conditions, weather_condition_probabilities)
+plotter.ylabel("Probability (%)")
+plotter.title("Weather Condition Crash Probabilities")
+plotter.show()
 
 # --- Road Location related crashes ---
 
@@ -159,10 +154,10 @@ for i in range(0, len(locations)):
         print(f'Probability of accident occurring on a {location}: {location_prob}')
         
 # plot location probs
-# plotter.bar(locations, location_probs)
-# plotter.ylabel("Probability (%)")
-# plotter.title("Crash Location Probabilities")
-# plotter.show()
+plotter.bar(locations, location_probs)
+plotter.ylabel("Probability (%)")
+plotter.title("Crash Location Probabilities")
+plotter.show()
 
 # --- Road Condition related crashes ---
 
@@ -214,17 +209,17 @@ for i in range(0, len(road_conditions_lst)):
         print(f'Probability of accident occurring on a {road_condition}: {road_condition_prob}')
         
 # plot conditon probs
-# plotter.bar(road_conditions_lst, road_condition_probs_lst)
-# plotter.ylabel("Probability (%)")
-# plotter.title("Road Condition Crash Probabilities")
-# plotter.show()
+plotter.bar(road_conditions_lst, road_condition_probs_lst)
+plotter.ylabel("Probability (%)")
+plotter.title("Road Condition Crash Probabilities")
+plotter.show()
 
 
 # --- Driver Action related crashes ---
 
 # get counts accidents by driver action (condition)
 
-driver_action_counts = crash_data_frame["TU-1 Driver Action"].value_counts()
+driver_action_counts = crash_data_frame["Driver Action"].value_counts()
 # print("Driver Action Counts: ", driver_action_counts)
 
 driver_action_lst = []
