@@ -3,7 +3,7 @@ import matplotlib.pyplot as plotter
 
 
 # Read in crash data
-crash_data = pd.read_csv("assets/all_crash_data.csv")
+crash_data = pd.read_csv("../assets/all_crash_data.csv")
 crash_data_frame = pd.DataFrame(crash_data)
 
 # Title Header

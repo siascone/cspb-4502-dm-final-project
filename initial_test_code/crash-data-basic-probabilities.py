@@ -7,12 +7,12 @@ import seaborn as sb
 
 
 # --- Read in crash data csv files ---
-# crash_data_2021= pd.read_csv('assets/2021-Crash-Data-Normalized.csv')
-# crash_data_2022 = pd.read_csv('assets/2022-Crash-Data-Normalized.csv')
-# crash_data_2023= pd.read_csv('assets/2023-Crash-Data-Normalized.csv')
-# crash_data_2024 = pd.read_csv('assets/2024-Crash-Data-Normalized.csv')
+# crash_data_2021= pd.read_csv('../assets/2021-Crash-Data-Normalized.csv')
+# crash_data_2022 = pd.read_csv('../assets/2022-Crash-Data-Normalized.csv')
+# crash_data_2023= pd.read_csv('../assets/2023-Crash-Data-Normalized.csv')
+# crash_data_2024 = pd.read_csv('../assets/2024-Crash-Data-Normalized.csv')
 
-crash_data = pd.read_csv('assets/all_crash_data.csv')
+crash_data = pd.read_csv('../assets/all_crash_data.csv')
 crash_data_frame = pd.DataFrame(crash_data) 
 
 # crash_data_files = glob.glob("assets/*.csv")
