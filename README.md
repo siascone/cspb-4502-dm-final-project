@@ -126,6 +126,6 @@ user to:
 
    You should see the following output
 
-   ![main-program-image](assets\plots\main-prog-img-1.png)
+   ![main-program-image](assets/plots/main-prog-img-1.png)
 
 3. Explore!
