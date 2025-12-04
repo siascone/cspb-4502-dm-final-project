@@ -47,7 +47,7 @@ crash types had a **Contributing Action** or **No Contributing Action** recorded
 #### File Structure
 
 ```yaml
-project-code/
+root/
 │
 ├── assets/
 │   ├── 2021-Crash-Data-Normalized.csv
@@ -84,15 +84,15 @@ This secion of code summarizes the perliminary data inspection and
 visualizations used to understand the crash data and build the initial 
 classification model.
 
-![Animal and Zone Probabilites](assets\plots\zone-and-animal-probs.png)
+![Animal and Zone Probabilites](assets/plots/zone-and-animal-probs.png)
 
-![Weather Condition Probabilities](assets\plots\weather-probs.png)
+![Weather Condition Probabilities](assets/plots/weather-probs.png)
 
-![Location Probabilites](assets\plots\location-probs.png)
+![Location Probabilites](assets/plots/location-probs.png)
 
-![Road Condition Probabilities](assets\plots\road-probs.png)
+![Road Condition Probabilities](assets/plots/road-probs.png)
 
-![Driver Action Probabilities](assets\plots\driver-action-probs.png)
+![Driver Action Probabilities](assets/plots/driver-action-probs.png)
 
 ## Main Program
 
