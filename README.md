@@ -129,3 +129,7 @@ user to:
    ![main-program-image](assets/plots/main-prog-img-1.png)
 
 3. Explore!
+
+---
+
+Thank you for exploring the data with me. Happy coding!
