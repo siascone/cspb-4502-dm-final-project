@@ -90,7 +90,6 @@ print(f"    Probability of crash under Clear Weather Conditions with Contributin
 
 
 # --- Dry Roads and Driver Action ---
-
 print("--- Dry Roads and Driver Action Probability ---\n")
 
 # Dry Roads and No Contributing Action
