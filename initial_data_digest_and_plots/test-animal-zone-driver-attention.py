@@ -125,6 +125,6 @@ prob_x_ca_prob_ca = prob_x_ca * prob_ca
 print(f"P(X | Contributing Action)*P(Contributing Action): {prob_x_ca_prob_ca} \n")
 
 if (prob_x_nca_prob_nca > prob_x_ca_prob_ca):
-    print("Given the crash senerio X = [Weather: Clear, Roads: Dry, Wild Animal: True] it is most probable that there will be No Contributing Action from the driver.")
+    print("Given the crash scenario X = [Weather: Clear, Roads: Dry, Wild Animal: True] it is most probable that there will be No Contributing Action from the driver.")
 else:
-    print("Given the crash senerio X = [Weather: Clear, Roads: Dry, Wild Animal: True] it is most probable that there will be a Contributing Action from the driver.")
+    print("Given the crash scenario X = [Weather: Clear, Roads: Dry, Wild Animal: True] it is most probable that there will be a Contributing Action from the driver.")

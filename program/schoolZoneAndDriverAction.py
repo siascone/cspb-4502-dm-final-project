@@ -78,7 +78,7 @@ def school_zone_report():
     print(f" P(Dry Roads | Contributing Factor): {prob_dry_ca} \n")
 
     # Calculate prob of X against C1 & C2
-    print(" --- Probability of Senerio X against C1 & C2 --- \n")
+    print(" --- Probability of Scenario X against C1 & C2 --- \n")
 
     prob_x_nca = (prob_school_nca * prob_clear_nca * prob_dry_nca)
     prob_x_ca = (prob_school_ca * prob_clear_ca * prob_dry_ca)
@@ -96,6 +96,6 @@ def school_zone_report():
     print(f" P(X | Contributing Action) * P(Contributing Action): {prob_x_ca_prob_ca} \n")
 
     if (prob_x_nca_prob_nca > prob_x_ca_prob_ca):
-        print(" RESULT: Given the crash senerio X = [Weather Condition: Clear, Road Condition: Dry, School Zone: True] we predict there will be No Contributing Action from the driver.")
+        print(" RESULT: Given the crash scenario X = [Weather Condition: Clear, Road Condition: Dry, School Zone: True] we predict there will be No Contributing Action from the driver.")
     else:
-        print(" RESULT: Given the crash senerio X = [Weather Condition: Clear, Road Condition: Dry, School Zone: True] we predict there will be a Contributing Action from the driver.")
+        print(" RESULT: Given the crash scenario X = [Weather Condition: Clear, Road Condition: Dry, School Zone: True] we predict there will be a Contributing Action from the driver.")
