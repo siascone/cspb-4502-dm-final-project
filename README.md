@@ -5,7 +5,7 @@
 This project serves as a code companion to the data digest and exploratory 
 analysis presented in:
 - [Crashing Through the Data](https://docs.google.com/document/d/1ZTHZTXQFD2DAC941J4DKAdF3wWawQLBsqgKOMONSCg4/edit?usp=sharing)
-- [Video Presentation and Code Demonstration]()
+- [Video Presentation and Code Demonstration](https://drive.google.com/file/d/19Ic10_7Qt2JDgocrQRgOe0DjaYP6YhsX/view?usp=sharing)
   - [Presentation Slides](https://docs.google.com/presentation/d/1ITdmJbpLhGIhZn-mY72UFU2gde6prOj60rbzDbEhBtY/edit?usp=sharing)
 - [Data Source - Colorado Crash Data](https://www.codot.gov/safety/traffic-safety/data-analysis/crash-data)
 - [Data Source - Normalized](https://drive.google.com/drive/folders/1bAJI7zsjkeqHfZvijk4FTBN3Hk0_4SpM?usp=drive_link)
