@@ -87,8 +87,8 @@ def wild_animal_report():
     print(f" P(X | No Contributing Action): {prob_x_nca}")
     print(f" P(X | Contributing Action): {prob_x_ca} \n")
 
-    # Calculate Naïve Bayesian Classifier Determination
-    print(" --- Naïve Bayesian Classifier Determination --- \n")
+    # Calculate Naïve Bayes Classifier Determination
+    print(" --- Naïve Bayes Classifier Determination --- \n")
 
     prob_x_nca_prob_nca = prob_x_nca * prob_nca
     prob_x_ca_prob_ca = prob_x_ca * prob_ca

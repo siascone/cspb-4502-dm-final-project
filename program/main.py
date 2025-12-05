@@ -11,7 +11,7 @@ def main():
     print("""
  >>> Crashing Through The Data <<<
  Exploring how Driver Action factors into School Zone, Construction Zone, 
- and Wild Animal related crashes under ideal conditions using Naïve Bayesian 
+ and Wild Animal related crashes under ideal conditions using Naïve Bayes 
  Classification.""")
     
     def print_choices():
